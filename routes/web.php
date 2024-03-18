@@ -8,6 +8,12 @@ use Inertia\Inertia;
 
 Route::redirect('/', '/login', 201);
 
+Route::prefix('prototype')->group(function () {
+    Route::get('/login', function () {
+        return Inertia::render('Prototype/login');
+    });
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
