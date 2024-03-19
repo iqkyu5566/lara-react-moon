@@ -1,8 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* @import "../css/videojs.css"; */
-
 @layer components {
     .side-link {
         @apply flex items-center font-normal text-black text-sm w-full mb-5 gap-3 transition-all;
@@ -23,9 +18,4 @@
         @apply rounded-full border border-gray-2 placeholder:text-gray-1 text-base text-gray-1 px-5 py-[11px]
         w-full max-w-[570px] focus:outline-none focus:ring-2 transition-all bg-no-repeat bg-center bg-[center_right_20px];
     }
-}
-
-.flex::before,
-.flex::after {
-    display: none !import;
 }
