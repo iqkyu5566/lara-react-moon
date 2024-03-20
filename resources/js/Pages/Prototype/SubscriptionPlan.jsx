@@ -16,8 +16,19 @@ export default function SubscriptionPlan() {
 
                     {/* Pricing Card */}
                     <div className="flex justify-center gap-10 mt-[70px]">
-                        <SubscriptionCard />
-                        <SubscriptionCard isPremium />
+                        <SubscriptionCard
+                            name="Basic"
+                            price={299000}
+                            durationInMonths={3}
+                            features={["Feature 1", "Feature 2", "Feature 3"]}
+                        />
+                        <SubscriptionCard
+                            isPremium
+                            name="Premium"
+                            price={299000}
+                            durationInMonths={3}
+                            features={["Feature 1", "Feature 2", "Feature 3"]}
+                        />
                     </div>
                     {/* <!-- /Pricing Card --> */}
                 </div>
