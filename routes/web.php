@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-Route::redirect('/', '/prototype/login', 201);
+Route::redirect('/', '/login', 201);
 
 Route::prefix('prototype')->name('prototype.')->group(function () {
     Route::get('/login', function () {
