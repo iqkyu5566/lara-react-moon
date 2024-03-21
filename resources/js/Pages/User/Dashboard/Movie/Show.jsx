@@ -17,7 +17,7 @@ export default function Show({ movie }) {
 
             {/* <!-- Button back to dashboard --> */}
             <div className="absolute top-5 left-5 z-20">
-                <Link href={route("dashboard")}>
+                <Link href={route("user.dashboard.index")}>
                     <img
                         src="/icons/ic_arrow-left.svg"
                         className="transition-all btn-back w-[46px]"
