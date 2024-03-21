@@ -20,7 +20,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=JfVOs4VSpmA',
                 'thumbnail' => 'https://i.ytimg.com/vi/JfVOs4VSpmA/maxresdefault.jpg',
-                'rating' => 9.5,
+                'rating' => 4.5,
                 'is_featured' => 1,
             ],
             [
@@ -29,7 +29,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=JfVOs4VSpmA',
                 'thumbnail' => 'https://i.ytimg.com/vi/JfVOs4VSpmA/maxresdefault.jpg',
-                'rating' => 6.5,
+                'rating' => 5.0,
                 'is_featured' => 0,
             ],
             [
@@ -38,7 +38,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=JfVOs4VSpmA',
                 'thumbnail' => 'https://i.ytimg.com/vi/JfVOs4VSpmA/maxresdefault.jpg',
-                'rating' => 7.5,
+                'rating' => 3.5,
                 'is_featured' => 0,
             ]
         ];

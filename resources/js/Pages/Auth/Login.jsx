@@ -105,7 +105,7 @@ export default function Login() {
                                     </span>
                                 </PrimaryButton>
 
-                                <Link href={route("prototype.register")}>
+                                <Link href={route("register")}>
                                     <PrimaryButton className="rounded-2xl bg-alerange py-[13px] text-center">
                                         <span className="text-base text-white">
                                             Create New Account

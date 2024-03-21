@@ -1,12 +1,17 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\User\DashboardController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::redirect('/', '/login', 201);
+
+Route::middleware(['auth', 'role:user'])->prefix('dashboard')->name('user.dashboard.')->group(function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('index');
+});
 
 Route::prefix('prototype')->name('prototype.')->group(function () {
     Route::get('/login', function () {
@@ -26,10 +31,6 @@ Route::prefix('prototype')->name('prototype.')->group(function () {
         return Inertia::render('Prototype/Movie/Show');
     })->name('movie.show');
 });
-
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
